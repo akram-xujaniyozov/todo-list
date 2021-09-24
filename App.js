@@ -98,7 +98,7 @@ export default function App() {
   const inputRef = useRef(null);
  
   useEffect(() => {
-      inputRef.current.focus();
+    inputRef.current.focus();
   });
 
   const addTodo = (e) => {
@@ -155,7 +155,7 @@ export default function App() {
           :
             todo.text
           }
-          <button onClick={() => handleComplete(todo.id, index)}>complete</button>
+          <button onClick={() => handleComplete(todo.id)}>complete</button>
           <button onClick={() => handleDelete(todo.id)}>delete</button>
         </li>
       ))}
